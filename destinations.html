@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures | Destinations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Wanderlust Adventures</h1>
+                <p>Explore the World with Us</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="contact.html">Book Now</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="destinations-hero">
+        <div class="container">
+            <h2>Our Destinations</h2>
+            <p>Explore our curated selection of breathtaking locations</p>
+        </div>
+    </section>
+
+    <section class="destinations-list">
+        <div class="container">
+            <div class="destination-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="europe">Europe</button>
+                <button class="filter-btn" data-filter="asia">Asia</button>
+                <button class="filter-btn" data-filter="americas">Americas</button>
+                <button class="filter-btn" data-filter="africa">Africa</button>
+            </div>
+
+            <div class="destinations-grid">
+                <div class="destination-card" data-category="europe">
+                    <img src="images/italy.jpg" alt="Italy">
+                    <div class="destination-info">
+                        <h3>Italy</h3>
+                        <p>Explore the rich history, art, and cuisine of Rome, Florence, and Venice.</p>
+                        <a href="contact.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="asia">
+                    <img src="images/japan.jpg" alt="Japan">
+                    <div class="destination-info">
+                        <h3>Japan</h3>
+                        <p>Experience the perfect blend of tradition and modernity in Tokyo and Kyoto.</p>
+                        <a href="contact.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="americas">
+                    <img src="images/peru.jpg" alt="Peru">
+                    <div class="destination-info">
+                        <h3>Peru</h3>
+                        <p>Discover the ancient ruins of Machu Picchu and the Sacred Valley.</p>
+                        <a href="contact.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="europe">
+                    <img src="images/france.jpg" alt="France">
+                    <div class="destination-info">
+                        <h3>France</h3>
+                        <p>From Parisian charm to Provence's lavender fields, France has it all.</p>
+                        <a href="contact.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="africa">
+                    <img src="images/safari.jpg" alt="Kenya">
+                    <div class="destination-info">
+                        <h3>Kenya</h3>
+                        <p>Go on safari in Nairobi National Park and explore Nairobi's beauty.</p>
+                        <a href="contact.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-category="asia">
+                    <img src="images/thailand.jpg" alt="Thailand">
+                    <div class="destination-info">
+                        <h3>Thailand</h3>
+                        <p>Discover bustling Bangkok, ancient temples, and pristine beaches.</p>
+                        <a href="contact.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-map">
+        <div class="container">
+            <h2>Explore Our Destinations on the Map</h2>
+            <div class="map-container">
+                <div id="world-map"></div>
+                <div class="map-legend">
+                    <h4>Legend</h4>
+                    <ul>
+                        <li><span class="europe"></span> Europe</li>
+                        <li><span class="asia"></span> Asia</li>
+                        <li><span class="americas"></span> Americas</li>
+                        <li><span class="africa"></span> Africa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wanderlust Adventures</h3>
+                    <p>Making travel dreams come true since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>info@wanderlustadventures.com</p>
+                    <p>+254 7123 456 78</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
